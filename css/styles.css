@@ -730,11 +730,9 @@ img {
     color: var(--light-slate);
 }
 
-.modal-input-title:not(:first-child) {
+.modal-input-title span {
+    display: block;
     margin-top: 8px;
-}
-
-.modal-input-title:not(:last-child) {
     margin-bottom: 4px;
 }
 
