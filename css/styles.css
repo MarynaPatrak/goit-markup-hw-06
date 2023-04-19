@@ -792,6 +792,22 @@ img {
     opacity: 1;
 }
 
+.modal-checkbox-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
+}
+
+.modal-checkbox-view {
+    color: var(--navy-blue-modal);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+   /* top: 50%;
+    transform: translateY(-50%);*/
+}
+
 .btn-submit {
     display: block;
     margin: 0 auto;
