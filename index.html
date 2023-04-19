@@ -407,6 +407,29 @@
               </li>
             </ul>
           </li>
+          <li class="footer-item-list list">
+            <h3 class="footer-item-title">Subscribe</h3>
+            <div class="footer-field">
+              <label class="footer-label" for="footer-email">
+                <input
+                  type="email"
+                  name="footer-email"
+                  id="footer-email"
+                  class="footer-input"
+                  title="Enter email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="btn-subscribe">
+                <span class="btn-subscribe-text"
+                  >Subscribe
+                  <svg class="subscribe-icon" width="24" height="20">
+                    <use href="./images/icons.svg#icon-subscribe"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
     </footer>
@@ -474,17 +497,24 @@
               ></textarea>
             </span>
           </label>
-          <input
-            type="checkbox"
-            name="accept"
-            id="accept"
-            class="modal-checkbox-view"
-            value="true"
-          />
-          <label class="modal-checkbox-text"
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
+          <div class="modal-check">
+            <input
+              type="checkbox"
+              name="accept"
+              id="accept"
+              class="modal-checkbox-view visually-hidden"
+              value="true"
+            />
+            <label class="modal-checkbox-text" for="accept">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-checkbox-link" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="btn-submit">Send</button>
         </form>
       </div>

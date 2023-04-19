@@ -60,6 +60,19 @@ img {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     width: 1158px;
     margin-left: auto;
@@ -535,6 +548,46 @@ img {
     background-color: var(--green);
 }
 
+.footer-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.btn-subscribe {
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background-color: var(--iris);
+    border-radius: 4px;
+    border: none;
+    margin-left: 24px;
+}
+
+.btn-subscribe-text {
+
+}
+
+.subscribe-icon {
+    fill: var(--white);
+    gap: 16px;
+    margin-top: 10px;
+}
+
 /*---------------PORTFOLIO---------------*/
 
 .header-portfolio {
@@ -701,6 +754,14 @@ img {
     cursor: pointer;
 }
 
+.modal-close-btn:focus {
+    background-color: var(--ocean);
+}
+
+.modal-close-btn:focus .modal-close-icon {
+    fill: var(--white);
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -792,20 +853,40 @@ img {
     opacity: 1;
 }
 
+.modal-check {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
 .modal-checkbox-text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--light-slate);
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.modal-checkbox-view {
-    color: var(--navy-blue-modal);
+.modal-checkbox-text span {
     width: 16px;
     height: 16px;
-    display: inline-block;
-   /* top: 50%;
-    transform: translateY(-50%);*/
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.modal-checkbox-view:checked+.modal-checkbox-text span {
+    background-color: var(--ocean);
+    border: none;
+    fill: var(--white);
+}
+
+.modal-checkbox-link {
+    margin-left: 4px;
 }
 
 .btn-submit {
