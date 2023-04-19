@@ -565,6 +565,7 @@ img {
 }
 
 .btn-subscribe {
+    margin: 0 auto;
     width: 165px;
     height: 40px;
     font-weight: 500;
@@ -575,7 +576,7 @@ img {
     background-color: var(--iris);
     border-radius: 4px;
     border: none;
-    margin-left: 24px;
+    /*margin-left: 24px;*/
 }
 
 .btn-subscribe-text {
@@ -585,7 +586,6 @@ img {
 .subscribe-icon {
     fill: var(--white);
     gap: 16px;
-    margin-top: 10px;
 }
 
 /*---------------PORTFOLIO---------------*/
